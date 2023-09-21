@@ -1,99 +1,23 @@
 ---
-title: HOF, map, reduce, filter, forEach
+title: Javscript high order functions
 date: 2023/09/19
-description: View examples of all possible Markdown options.
+description: View examples of high order functions
 tag: web development
 author: You
 ---
 
-# Markdown Examples
+<Image
+  src="/images/photo8.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
 
-## h2 Heading
+ .map()
+ 
 
-### h3 Heading
+Function .map() is a manipulative function that can modify each element’s content in an array that it is called on. This function returns a new array with modified values, the array that it is called on will stay still. This function is useful for adding a little change to an already existing array, for example adding a property to an object or modifying it. Its construction and use are identical to the previous function .forEach() and both can be used interchangeably.
 
-#### h4 Heading
-
-##### h5 Heading
-
-###### h6 Heading
-
-## Emphasis
-
-**This is bold text**
-
-_This is italic text_
-
-~~Strikethrough~~
-
-## Blockquotes
-
-> Develop. Preview. Ship. – Vercel
-
-## Lists
-
-Unordered
-
-- Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit
-- Integer molestie lorem at massa
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-## Code
-
-Inline `code`
-
-```
-export default function Nextra({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="RSS"
-          href="/feed.xml"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Inter-roman.latin.var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
-}
-```
-
-## Tables
-
-| **Option** | **Description**                                                                                                             |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------- |
-| First      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
-| Second     | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
-| Third      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
-
-## Links
-
-- [Next.js](https://nextjs.org)
-- [Nextra](https://nextra.vercel.app/)
-- [Vercel](http://vercel.com)
-
-### Footnotes
-
-- Footnote [^1].
-- Footnote [^2].
-
-[^1]: Footnote **can have markup**
-
-and multiple paragraphs.
-
-[^2]: Footnote text.
+Just like the function .forEach(), this function also takes only 1 parameter .map(callback). The parameter callback can take up to 3 parameters element, index & array (but only the element parameter is required, the rest is optional).
